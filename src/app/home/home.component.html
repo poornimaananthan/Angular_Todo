@@ -1,0 +1,11 @@
+Home Page Welcomes!!!
+
+<p appColorBackGroud *ngIf="isReady">Home Sweet Home</p>
+<div *ngFor="let details of sampleArray">
+    <h1>{{details.name}}</h1>
+    <h1>{{details.age}}</h1>
+    <h1>{{details.gender}}</h1>
+</div>
+
+<input [(ngModel)]="sampleData"  type="text">
+<p>{{sampleData}}</p>
